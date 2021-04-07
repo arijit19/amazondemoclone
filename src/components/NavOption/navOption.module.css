@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: white;
+}
+
+.textOne{
+    font-size: 10px;
+}
+
+.textTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.links{
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+.links:hover{
+    box-shadow: 0px 5px 10px rgba(4, 121, 255, 0.4)
+}
+
+.links:active{
+    box-shadow: 0px 5px 25px rgba(4, 121, 255, 0.4)
+}

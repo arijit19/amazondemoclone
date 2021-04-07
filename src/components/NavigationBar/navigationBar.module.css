@@ -1,0 +1,74 @@
+.container{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container > a {
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.container>a :hover{
+    box-shadow: 0px 5px 10px rgba(4, 121, 255, 0.4)
+}
+
+.container>a :active{
+    box-shadow: 0px 5px 25px rgba(4, 121, 255, 0.4)
+}
+
+.logo{
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    padding: 0 4px;
+    padding-top: 18px;
+    transition: all 0.1s ease-in-out;
+}
+.logo:hover {
+    box-shadow: 0px 5px 10px rgba(4, 121, 255, 0.4)
+}
+.logo:active{
+    box-shadow: 0px 5px 25px rgba(4, 121, 255, 0.4)
+}
+.icon{
+    padding: 5px;
+    height: 22px;
+    width: 30px;
+    background-color: #cd9042;
+}
+
+.search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+    padding: 0px 30px;
+}
+
+.input{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.basketWrapper{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.basketIcon{
+    /* width: 100%; */
+}
+.count{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 800;
+}
