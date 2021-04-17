@@ -4,6 +4,7 @@ import {loadStripe} from '@stripe/stripe-js/';
 
 import NavigationBar from '../components/NavigationBar/NavigationBar';
 import Payment from '../components/Payment/Payment';
+import Footer from '../components/Footer/Footer';
 
 const stripePromise = loadStripe("pk_test_Tgfncb8ooUWUkZc6AVaA8ErZ00bZaYgxzQ");
 const PaymentPage = ()=>(
@@ -12,6 +13,7 @@ const PaymentPage = ()=>(
         <Elements stripe={stripePromise}>
             <Payment/>
         </Elements>
+        <Footer/>
     </Fragment>
 )
 export default PaymentPage;

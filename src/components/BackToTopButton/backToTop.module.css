@@ -1,0 +1,15 @@
+.button{
+    background-color: #232f3e;
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    border: none;
+}
+
+.button:hover{
+    background-color: #1c3b61;
+}
+
+.button:active{
+    background-color: #042a58;
+}
