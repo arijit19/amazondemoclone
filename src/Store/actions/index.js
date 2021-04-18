@@ -40,12 +40,11 @@ export{
 }from './Shop/EmptyBasket';
 
 export{
-    addOrder,
     addOrderDatabase
 }from './Shop/AddOrder';
 
 export{
-    getOrder,
+    addOrder,
     getOrdersDatabase
 }from  './Shop/GetOrders'
 

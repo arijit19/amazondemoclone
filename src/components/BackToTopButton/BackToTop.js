@@ -24,9 +24,11 @@ const BackToTop = () =>{
   
   window.addEventListener('scroll', toggleVisible);
   
+
   return (
+    visible &&
     <button onClick={scrollToTop} className={styles.button}>
-        <span>Back To Top</span>
+      <span>Back To Top</span>
     </button>
   );
 }

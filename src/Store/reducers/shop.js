@@ -55,13 +55,7 @@ const addOrder = (state, action) => {
     ]})
 }
 
-const getOrders = (state, action) => {
-    return updateObject(state,{orders: action.orders})
-}
 
-// const recievedOrders =  (state, action)=> {
-//     return updateObject(state,{ordersRecieved: true})
-// }
 const reducer = (state = initialState, action)=> {
     switch(action.type) {
         case actionType.ADD_TO_BASKET: return addToBasket(state, action);
@@ -71,8 +65,6 @@ const reducer = (state = initialState, action)=> {
         case actionType.SHOW_MODAL: return showModal(state, action);
         case actionType.EMPTY_BASKET: return emptyBasket(state, action);
         case actionType.ADD_ORDER: return addOrder(state, action);
-        case actionType.GET_ORDER: return getOrders(state, action);
-        // case actionType.ORDERS_RECIEVED: return recievedOrders(state, action);
         default: return state;
     }
 }

@@ -3,14 +3,12 @@ import { Fragment } from 'react';
 
 import * as actionTypes from "../Store/actions/index";
 import Checkout from "../components/Checkout/Checkout";
-import NavigationBar from "../components/NavigationBar/NavigationBar";
 import Modal from "../components/Modal/Modal";
 
 
 const CheckoutPage = (props)=>(
     <Fragment>
         <Modal show={props.modalVisibility} modalClosed={()=>props.closeModal(false)}><h1>{"Please SignIn to proceed to checkout"}</h1></Modal> 
-        <NavigationBar/>
         <Checkout/>
     </Fragment>
 )
